@@ -23,6 +23,7 @@ import { Link } from 'react-router-dom'
 
 
 
+
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
 // For more advanced usage please check Responsive docs under the "Usage" section.
@@ -100,13 +101,15 @@ const HomepageHeading = ({ mobile }) => (
             }}>sexual harassment </span>&nbsp;<span className="white" style={{
                 fontSize: mobile ? '1.2em' : '1.7em',
                 fontWeight: 'normal',
-                marginTop: mobile ? '0.5em' : '1.5em',
-            }}>when you do and it’s inexcusable!</span>
+                marginTop: mobile ? '0.2em' : '1.5em',
+            }}>when you do and it's inexcusable!</span>
+            <div>
         <Button primary size='huge' style={{
           marginTop:'0.5em'}}>
             Get Started
       <Icon name='right arrow'/>
         </Button>
+        </div>
     </Container>
 )
 
@@ -155,9 +158,9 @@ class DesktopContainer extends Component {
                 </Menu.Item>
                                <Menu.Item as='a'><Link to="/know-more">Know More</Link></Menu.Item>
                                 <Menu.Item as='a'><Link to="/sexual-harassment">Sexual Harassment</Link></Menu.Item>
-                                <Menu.Item as='a'><Link to="#">Get Educated</Link></Menu.Item>
+                                <Menu.Item as='a'><Link to="/get-educated">Get Educated</Link></Menu.Item>
                                 <Menu.Item position='right'>
-                            <Link to = "signup">
+                            <Link to = "/signup">
                                     <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                                         Sign Up
                   </Button>
@@ -209,8 +212,8 @@ class MobileContainer extends Component {
           </Menu.Item>
                     <Menu.Item as='a'><Link to="/know-more">Know More</Link></Menu.Item>
                     <Menu.Item as='a'><Link to="/sexual-harassment">Sexual Harassment</Link></Menu.Item>
-                    <Menu.Item as='a'><Link to="#">Get Educated</Link></Menu.Item>
-                    <Menu.Item as='a'><Link to="#">Sign Up</Link></Menu.Item>
+                    <Menu.Item as='a'><Link to="/get-educated">Get Educated</Link></Menu.Item>
+                    <Menu.Item as='a'><Link to="/signup">Sign Up</Link></Menu.Item>
                 </Sidebar>
 
                 <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -342,19 +345,18 @@ const HomepageLayout = () => (
                         <Grid.Column width={3}>
                             <Header inverted as='h4' content='Contact Us' />
                             <List link inverted>
-                                <List.Item as='a'>facebook</List.Item>
-                                <List.Item as='a'>twitter</List.Item>
-                                <List.Item as='a'>instagram</List.Item>
+                                <List.Item as='a'><Link to="https://www.facebook.com/A-Fine-Line-106239990738971">facebook</Link></List.Item>
+                                <List.Item as='a'><Link to="https://twitter.com/a-fi_neli_ne">twitter</Link></List.Item>
+                                <List.Item as='a'><Link to="https://instagram.com/a.fi.neli.ne?igshid=5Ich6p6y0wd4">instagram</Link></List.Item>
                                 <List.Item as='a'>gmail</List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={3}>
                             <Header inverted as='h4' content='Services' />
                             <List link inverted>
-                                <List.Item as='a'>Media Campaign</List.Item>
+                            <List.Item as='a'>Media Campaign</List.Item>
                                 <List.Item as='a'>campus Activism</List.Item>
                                 <List.Item as='a'>Education and Engagement</List.Item>
-                                
                             </List>
                         </Grid.Column>
                         <Grid.Column width={5}>
@@ -364,7 +366,7 @@ const HomepageLayout = () => (
             </Grid.Column>
             <Grid.Column width={5}>
                             
-                            Web designed by WEBBEX group of company<br />0276711665<br/>0542161579
+                            Web designed by WEBBEX group of company<br />instagram<br/><Link to="https://www.instagram.com/webbexgh"><i className="fa fa-instagram" style={{fontSize: '40px'}}></i></Link>
                 
             </Grid.Column>
                     </Grid.Row>
