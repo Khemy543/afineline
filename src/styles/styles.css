@@ -1,0 +1,311 @@
+.red{
+    color: red;
+    
+}
+
+.white{
+    color: white;
+}
+
+h3{
+    font-size: 1.33em;
+    font-weight: normal;
+}
+
+main section {
+  width: 70%;
+  padding: 40px 0;
+  margin: 30px auto 60px auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+   
+}
+
+  main section h2 {
+  font-size: 3.5rem;
+  color: rgb(19, 18, 18);
+  text-transform: uppercase;
+ line-height: 4.0rem; 
+ padding-right: 10px;
+ border-right: 3px solid #ddd;
+}
+
+main section div{
+    margin-left: 20px;
+}
+.section {
+  position: relative;
+}
+.section .title-area {
+  max-width: 760px;
+  margin: 0 auto 70px;
+  display: block;
+  padding: 0 15px;
+  text-align: center;
+}
+.section .title-area .description {
+  font-size: 16px;
+  color: #777777;
+}
+.section [class*="col-"] .title-area {
+  padding: 0;
+}
+
+.col-md-4 {
+  width: 33.33333333%;
+}
+.info-icon {
+  text-align: center;
+}
+.info-icon .icon {
+  font-size: 62px;
+  line-height: 66px;
+  color: rgb(0, 99, 248);
+  margin-bottom: 10px;
+}
+.info-icon .description {
+  margin-top: 15px;
+  color: #777777;
+}
+
+
+/*------------- SERVICES -------------------*/
+
+div.services {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(3,1fr);
+ padding: 10px;
+
+}
+
+
+.services div {
+  text-align: center;
+  background: #fff;
+  width: 90%;
+  border-radius: 10px;
+  margin: 10px auto 50px auto;
+  -webkit-box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+  
+}
+
+.services p.service-icon {
+  font-size: 3.4rem;
+  padding: 10px 0px 10px 90px;
+  margin: 0px 0px 10px 0px;
+  text-align: left;
+  color: rgb(190, 190, 190);
+  filter: grayscale(0%);
+  
+}
+.services p.service-title{
+  font-size: 3.1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.services p:last-of-type{
+  padding: 0px 90px 20px 90px; 
+  text-align: left;
+}
+
+footer {
+  background: rgb(0, 99, 248);
+  color: #fff;
+  padding: 10px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+footer ul {
+  
+  list-style: none;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+footer ul li a {
+  color: #eee;
+}
+
+
+@media (max-width:1310px) and (min-width:1100px) {
+    
+       
+    main section {
+      width: 90%;
+      padding: 90px 0;
+      margin: 0px auto 50px auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      
+    }
+    main section div p {
+      padding: 0px 90px;
+    }
+    
+    
+
+    .services p.service-icon {
+      font-size: 2.4rem;
+      padding: 10px 30px;
+      margin: 0px 0px 30px 0px;
+      
+    }
+    .services p.service-title{
+      font-size: 2.1rem;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .services p:last-of-type{
+      padding: 0px 20px; 
+      text-align: left;
+    }
+
+    
+}
+
+@media (max-width:1099px) and (min-width:850px) {
+    
+  main section {
+    width: 90%;
+    padding: 90px 0;
+    margin: 0px auto 50px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  main section div p {
+    padding: 0px 90px;
+  }
+  
+  
+  .services p.service-icon {
+    font-size: 2.4rem;
+    padding: 10px 30px;
+    margin: 0px 0px 30px 0px;
+    
+  }
+  .services p.service-title{
+    font-size: 2.1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .services p:last-of-type{
+    padding: 0px 20px; 
+    text-align: left;
+  }
+
+  }
+
+
+@media (max-width:849px) and (min-width:600px) {
+    
+  main section {
+    width: 90%;
+    padding: 90px 0;
+    margin: 0px auto 50px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  main section div p {
+    padding: 0px 90px;
+  }
+  
+ div.services {
+   display: grid;
+   grid-template-columns: 1fr;
+  }
+   div.services div {
+    width: 70%;
+  }
+
+  .services p.service-icon {
+    font-size: 2.4rem;
+    padding: 10px 30px;
+    margin: 0px 0px 30px 0px;
+    
+  }
+  .services p.service-title{
+    font-size: 2.1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .services p:last-of-type{
+    padding: 0px 20px; 
+    text-align: left;
+  }
+
+  
+}
+
+
+@media (max-width:599px) and (min-width:0px) {
+     main section {
+    width: 90%;
+    padding: 10px 0;
+    margin: 50px auto 0px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  main section div p {
+    padding: 0px 10px;
+  }
+  
+  div.services {
+   display: grid;
+   grid-template-columns: 1fr;
+  }
+  div.services div {
+    width: 80%;
+  }
+
+  .services p.service-icon {
+    font-size: 2.4rem;
+    padding: 10px 30px;
+    margin: 0px 0px 30px 0px;
+    
+  }
+  .services p.service-title{
+    font-size: 2.1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .services p:last-of-type{
+    padding: 0px 20px; 
+    text-align: left;
+  }
+
+
+ 
+  main section form div label {
+    margin-right:10px;
+    border-radius: 5px;
+  
+  }
+  
+  main section form div:last-of-type input {
+   
+    padding: 10px;
+    border-radius: 5px;
+  
+
+  }
+}
