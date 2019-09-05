@@ -285,7 +285,7 @@ const HomepageLayout = () => (
             </p>
                     </Grid.Column>
                     <Grid.Column floated='right' width={7} >
-                        {/* <Image bordered rounded size='large' style={{ height: '350px' }} src={require("../images/img2.jpg")} /> */}
+                        <Image bordered rounded size='large' style={{ height: '350px' }} src={require("../images/img2.jpg")} /> 
 
                       
                     </Grid.Column>
