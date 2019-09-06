@@ -8,6 +8,7 @@ import GetEducated from './pages/getEducated'
 import Login from './pages/login'
 
 
+
 export const Routers =() => 
     <BrowserRouter>
         <Switch>

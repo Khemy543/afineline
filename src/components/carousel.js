@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 
 class Slideview extends Component {
@@ -10,43 +12,34 @@ class Slideview extends Component {
         <Carousel.Item>
     <img
       className="d-block w-100"
-      src={require("../images/img2.jpg")}
+      src={require("../images/img5.jpg")}
       alt="Third slide"
-     
+      style={{height:"320px"}}
     />
 
-    <Carousel.Caption>
-      <h3>NETFLIX</h3>
-      <p>Get your NETFLIX account from jessy naggy works</p>
-    </Carousel.Caption>
+    
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={require("../images/img2.jpg")}
+      src={require("../images/img6.jpg")}
       alt="First slide"
-      
+      style={{height:"320px"}}
      
       
     />
-    <Carousel.Caption>
-      <h3>FLYERS DESIGN</h3>
-      <p>Come and let's give you a perfect design</p>
-    </Carousel.Caption>
+    
     </Carousel.Item>
 
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={require("../images/img2.jpg")}
+      src={require("../images/img4.jpg")}
       alt="Third slide"
-      
+      style={{height:"320px"}}
     />
 
-    <Carousel.Caption>
-      <h3>LAPTOP ACCESSORIES</h3>
-      <p>We sell laptops and other laptops accessories</p>
-    </Carousel.Caption>
+    
   </Carousel.Item>
 
   

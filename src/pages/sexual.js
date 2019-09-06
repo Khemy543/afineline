@@ -274,7 +274,7 @@ Source: Preventing Sexual Harassment (BNA Communications, Inc.) SDC IP .73 1992 
             </Grid.Column>
             <Grid.Column width={5}>
                             
-            Web designed by WEBBEX group of company<br />instagram<br/><Link to="https://www.instagram.com/webbexgh"><i className="fa fa-instagram" style={{fontSize: '40px'}}></i></Link>
+            Web designed by WEBBEX group of company<br /><Link to="https://www.instagram.com/webbexgh" style={{color:"#fff"}}>instagram</Link>
                 
             </Grid.Column>
                     </Grid.Row>

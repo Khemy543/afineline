@@ -7,7 +7,6 @@ import {
     Grid,
     Header,
     Icon,
-    Image,
     List,
     Menu,
     Responsive,
@@ -18,6 +17,9 @@ import {
 import 'semantic-ui-css/semantic.min.css'
 import '../styles/styles.css'
 import { Link } from 'react-router-dom'
+import Slideview from '../components/carousel' 
+
+
 
 
 
@@ -264,7 +266,7 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
-        <Segment style={{ padding: '3em 0em' }} vertical>
+        <Segment style={{ padding: '2.5em 0em' }} vertical>
             <Grid container stackable verticalAlign='middle'>
                 <Grid.Row>
                     <Grid.Column width={8}>
@@ -287,11 +289,14 @@ const HomepageLayout = () => (
                             A Fine Line is an anti-sexual harassment that seeks to start an impactful conversation to create awareness about sexual harassment and violence committed by young adults against their peers on campus and to change the outlook of people on such an inexcusable behaviour.
             </p>
                     </Grid.Column>
-                    <Grid.Column floated='right' width={7} >
-                        <Image bordered rounded size='large' style={{ height: '350px' }} src={require("../images/img2.jpg")} /> 
+                    <Grid.Column floated='right' width={7} style={{height:"300px"}}>
+                        {/* <Image bordered rounded size='large' style={{ height: '350px' }} src={require("../images/img2.jpg")} /> */}
+                        
+                        <Slideview />
 
                       
                     </Grid.Column>
+                     
                 </Grid.Row>
             </Grid>
         </Segment>
@@ -366,7 +371,7 @@ const HomepageLayout = () => (
             </Grid.Column>
             <Grid.Column width={5}>
                             
-                            Web designed by WEBBEX group of company<br />instagram<br/><Link to="https://www.instagram.com/webbexgh"><i className="fa fa-instagram" style={{fontSize: '40px'}}></i></Link>
+                            Web designed by WEBBEX group of company<br /><Link to="https://www.instagram.com/webbexgh" style={{color:"#fff"}}>instagram</Link>
                 
             </Grid.Column>
                     </Grid.Row>
