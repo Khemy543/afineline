@@ -251,11 +251,11 @@ Source: Preventing Sexual Harassment (BNA Communications, Inc.) SDC IP .73 1992 
                 <Grid divided inverted stackable>
                     <Grid.Row>
                         <Grid.Column width={3}>
-                            <Header inverted as='h4' content='Contact Us' />
+                        <Header inverted as='h4' content='Contact Us' />
                             <List link inverted>
-                            <List.Item as='a'><Link to="https://www.facebook.com/A-Fine-Line-106239990738971">facebook</Link></List.Item>
-                                <List.Item as='a'><Link to="https://twitter.com/a-fi_neli_ne">twitter</Link></List.Item>
-                                <List.Item as='a'><Link to="https://instagram.com/a.fi.neli.ne?igshid=5Ich6p6y0wd4">instagram</Link></List.Item>
+                                <List.Item as='a'><a href="https://www.facebook.com/A-Fine-Line-106239990738971">facebook</a></List.Item>
+                                <List.Item as='a'><a href="https://twitter.com/a-fi_neli_ne">twitter</a></List.Item>
+                                <List.Item as='a'><a href="https://instagram.com/a.fi.neli.ne?igshid=5Ich6p6y0wd4">instagram</a></List.Item>
                                 <List.Item as='a'>gmail</List.Item>
                             </List>
                         </Grid.Column>

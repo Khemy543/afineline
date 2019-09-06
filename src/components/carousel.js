@@ -14,7 +14,7 @@ class Slideview extends Component {
       className="d-block w-100"
       src={require("../images/img5.jpg")}
       alt="Third slide"
-      style={{height:"320px"}}
+      style={{height:"310px"}}
     />
 
     
@@ -24,7 +24,7 @@ class Slideview extends Component {
       className="d-block w-100"
       src={require("../images/img6.jpg")}
       alt="First slide"
-      style={{height:"320px"}}
+      style={{height:"310px"}}
      
       
     />
@@ -36,7 +36,7 @@ class Slideview extends Component {
       className="d-block w-100"
       src={require("../images/img4.jpg")}
       alt="Third slide"
-      style={{height:"320px"}}
+      style={{height:"310px"}}
     />
 
     

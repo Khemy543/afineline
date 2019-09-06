@@ -289,7 +289,7 @@ const HomepageLayout = () => (
                             A Fine Line is an anti-sexual harassment that seeks to start an impactful conversation to create awareness about sexual harassment and violence committed by young adults against their peers on campus and to change the outlook of people on such an inexcusable behaviour.
             </p>
                     </Grid.Column>
-                    <Grid.Column floated='right' width={7} style={{height:"300px"}}>
+                    <Grid.Column floated='right' width={7} style={{height:"320px", border:"1px solid rgb(228, 227, 227)"}}>
                         {/* <Image bordered rounded size='large' style={{ height: '350px' }} src={require("../images/img2.jpg")} /> */}
                         
                         <Slideview />
@@ -350,9 +350,9 @@ const HomepageLayout = () => (
                         <Grid.Column width={3}>
                             <Header inverted as='h4' content='Contact Us' />
                             <List link inverted>
-                                <List.Item as='a'><Link to="https://www.facebook.com/A-Fine-Line-106239990738971">facebook</Link></List.Item>
-                                <List.Item as='a'><Link to="https://twitter.com/a-fi_neli_ne">twitter</Link></List.Item>
-                                <List.Item as='a'><Link to="https://instagram.com/a.fi.neli.ne?igshid=5Ich6p6y0wd4">instagram</Link></List.Item>
+                                <List.Item as='a'><a href="https://www.facebook.com/A-Fine-Line-106239990738971">facebook</a></List.Item>
+                                <List.Item as='a'><a href="https://twitter.com/a-fi_neli_ne">twitter</a></List.Item>
+                                <List.Item as='a'><a href="https://instagram.com/a.fi.neli.ne?igshid=5Ich6p6y0wd4">instagram</a></List.Item>
                                 <List.Item as='a'>gmail</List.Item>
                             </List>
                         </Grid.Column>
@@ -371,7 +371,7 @@ const HomepageLayout = () => (
             </Grid.Column>
             <Grid.Column width={5}>
                             
-                            Web designed by WEBBEX group of company<br /><Link to="https://www.instagram.com/webbexgh" style={{color:"#fff"}}>instagram</Link>
+                            Web designed by WEBBEX group of company<br /><a href="https://www.instagram.com/webbexgh" style={{color:"#fff"}}>instagram</a>
                 
             </Grid.Column>
                     </Grid.Row>
