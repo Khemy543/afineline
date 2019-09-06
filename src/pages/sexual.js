@@ -254,7 +254,7 @@ Source: Preventing Sexual Harassment (BNA Communications, Inc.) SDC IP .73 1992 
                         <Header inverted as='h4' content='Contact Us' />
                             <List link inverted>
                                 <List.Item as='a'><a href="https://www.facebook.com/A-Fine-Line-106239990738971">facebook</a></List.Item>
-                                <List.Item as='a'><a href="https://twitter.com/a-fi_neli_ne">twitter</a></List.Item>
+                                <List.Item as='a'><a href="https://twitter.com/a_fi_neli_ne">twitter</a></List.Item>
                                 <List.Item as='a'><a href="https://instagram.com/a.fi.neli.ne?igshid=5Ich6p6y0wd4">instagram</a></List.Item>
                                 <List.Item as='a'>gmail</List.Item>
                             </List>

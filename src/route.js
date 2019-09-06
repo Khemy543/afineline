@@ -6,6 +6,7 @@ import Signup from './pages/signup'
 import Sexualpage from './pages/sexual'
 import GetEducated from './pages/getEducated'
 import Login from './pages/login'
+import GetStarted from './pages/getStarted'
 
 
 
@@ -18,6 +19,7 @@ export const Routers =() =>
         <Route exact path='/sexual-harassment' component={ Sexualpage } />
         <Route exact path='/get-educated' component={ GetEducated } />
         <Route exact path='/login' component={ Login } />
+        <Route exact path='/yourstory' component={ GetStarted } />
         
         </Switch>
         </BrowserRouter>

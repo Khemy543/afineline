@@ -4,10 +4,10 @@ import {
     Button,
     Container,
     Grid,
-    Header,
-    Icon,
     Image,
+    Icon,
     List,
+    Header,
     Menu,
     Responsive,
     Segment,
@@ -17,14 +17,7 @@ import {
 import 'semantic-ui-css/semantic.min.css'
 import '../styles/styles.css'
 import { Link } from 'react-router-dom'
-import 'font-awesome/css/font-awesome.min.css'
 
-
-
-
-// Heads up!
-// We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
-// For more advanced usage please check Responsive docs under the "Usage" section.
 const getWidth = () => {
     const isSSR = typeof window === 'undefined'
 
@@ -190,7 +183,7 @@ ResponsiveContainer.propTypes = {
     children: PropTypes.node,
 }
 
-const GetEducated = () => (
+const GetStarted = () => (
     <ResponsiveContainer>
         <Segment style={{ padding: '1em 0em' }} vertical>
         <Grid container stackable verticalAlign='middle'>
@@ -198,18 +191,62 @@ const GetEducated = () => (
                 <Grid.Column floated='left' width={4}>
                         <Image style={{width:'300px' }} src={require("../images/img3.jpg")} />
                     </Grid.Column>
+
+                    <Grid.Column floated='right' width={7}>
+                    <span style={{
+                fontSize:'2.5em',
+                fontWeight: 'bold',
+                marginBottom: '1em',
+               
+            }}>Record Your Story</span>
+            <p style={{ fontSize: '1.33em' ,fontWeight:"bold"}}>
+            Share your story to further this conversation.
+            </p>
+                    </Grid.Column>
                   
                     
                 </Grid.Row>
             </Grid>
         </Segment>
-
         <Segment style={{ padding: '1em 0em' }} vertical>
-            
+            <span style={{
+                fontSize:'2.5em',
+                fontWeight: 'bold',
+                marginBottom: '1em',
+               
+            }}>Speak Out, Say Something.</span>
+            <Container style={{paddingTop:'20px', paddingBottom:'20px'}}>
+
+
+
+<List>
+    <List.Item as='h3'><i className="fa fa-pencil"></i>Record your story via text or a voice note and post it on your Facebook page, add #afineline and mention @A FINE LINE in your Facebook post.</List.Item>
+    <List.Item as='h3'><i className="fa fa-pencil"></i>Tweet your story, add #afineline and mention @a_fi_neli_ne.</List.Item>
+    <List.Item as='h3'><i className="fa fa-pencil"></i>Send your story to our Facebook page, Twitter or Instagram account and we’d post it anonymously. </List.Item>
+       
+    </List>
+
+    <Container  style={{paddingTop:'20px', paddingBottom:'20px'}}>
+    <Grid divided inverted stackable>
+    <Grid.Row>
+    <Grid.Column width={2}>
+        <a href="https://www.facebook.com/A-Fine-Line-106239990738971"><img alt="#" src={require("../images/fb.jpg")} style={{height:"100px", width:"100px"}}/></a>
+        </Grid.Column>
+        <Grid.Column width={2}>
+        <a href="https://twitter.com/a_fi_neli_ne"><img alt="#" src={require("../images/twitter.png")} style={{height:"100px", width:"100px"}}/></a>
+        </Grid.Column>
+        <Grid.Column width={2}>
+        <a href="https://instagram.com/a.fi.neli.ne?igshid=5Ich6p6y0wd4"><img alt="#" src={require("../images/instagram.jpg" )} style={{height:"100px", width:"100px"}}/></a>
+        </Grid.Column>
+        </Grid.Row>
+        </Grid>
+        </Container>
+
+
+</Container>
 
             </Segment>
-
-        <Segment inverted vertical style={{ padding: '5em 0em' }}>
+            <Segment inverted vertical style={{ padding: '5em 0em' }}>
             <Container>
                 <Grid divided inverted stackable>
                     <Grid.Row>
@@ -245,5 +282,6 @@ const GetEducated = () => (
             </Container>
         </Segment>
     </ResponsiveContainer>
-)
-export default GetEducated
+    )
+
+    export default GetStarted
